@@ -22,7 +22,6 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "seed": "node ./db/migrations/seed.js",
     "start": "nodemon app.js",
     "test": "nyc mocha --recursive --exit"
   },
