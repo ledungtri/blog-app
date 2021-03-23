@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { verifyOwner, verifyLoggedIn } = require('./auth');
-const { validatePost } = require('../controllers/SchemaValidator');
-const PostController = require('../controllers/PostController');
+const { validatePost } = require('../controllers/schemaValidator');
+const PostController = require('../controllers/postController');
 
 router.route('/')
   .get(PostController.find)
